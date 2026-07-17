@@ -2,83 +2,303 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>England vs Argentina | SaverSeats Live</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spain vs Argentina | Final - Match 104 Tickets | MetLife Stadium</title>
+    <meta name="description" content="Get your tickets for Spain vs Argentina – Match 104 Final on Sunday, July 19 at MetLife Stadium. Secure your seats starting at $7,150.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
     <style>
-        /* Stadium background with high priority */
-        body { 
-            margin: 0; font-family: 'Inter', sans-serif; color: #fff; 
-            height: 100vh; width: 100vw;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2000') !important;
-            background-size: cover !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            display: flex; justify-content: center; align-items: center; 
+        :root {
+            --primary: #FFD700; /* Gold accent */
+            --secondary: #00A86B; /* Vibrant green accent */
+            --dark-bg: #0d0f12;
+            --card-bg: rgba(255, 255, 255, 0.07);
+            --text-light: #ffffff;
+            --text-muted: #a0aec0;
         }
-        .main-card { 
-            background: rgba(20, 25, 35, 0.7); backdrop-filter: blur(20px); 
-            border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; 
-            padding: 40px; width: 700px; text-align: center; 
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        .data-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 25px 0; }
-        .data-box { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 10px; font-size: 0.8rem; }
-        .data-val { display: block; font-size: 1.2rem; font-weight: bold; color: #fff; margin-top: 5px; }
-        .cta-button {
-            display: block; width: 100%; padding: 20px; margin-top: 20px;
-            background: #3b82f6; color: #fff; text-decoration: none;
-            font-weight: bold; border-radius: 10px; text-transform: uppercase;
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Hero Stadium Background with Dark Overlay */
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba(13, 15, 18, 0.7), rgba(13, 15, 18, 0.95)), 
+                              url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 650px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        /* Glassmorphism Card */
+        .ticket-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff3366, #ff003c);
+            color: white;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(255, 0, 60, 0.3);
+        }
+
+        /* Matchup Title */
+        .matchup {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .matchup span {
+            display: block;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin: 5px 0;
+            font-weight: 400;
+        }
+
+        /* Event Details */
+        .details-grid {
+            margin: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+        }
+
+        .detail-item {
+            margin: 12px 0;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .detail-item strong {
+            color: #fff;
+        }
+
+        .detail-icon {
+            color: var(--primary);
+        }
+
+        /* Pricing Area */
+        .price-container {
+            margin-bottom: 30px;
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .price-amount {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-top: 5px;
+        }
+
+        .price-currency {
+            font-size: 1.5rem;
+            vertical-align: super;
+            color: var(--primary);
+        }
+
+        /* CTA Button */
+        .cta-btn {
+            display: block;
+            background: linear-gradient(135deg, #ffd700, #ffa500);
+            color: #000;
+            text-decoration: none;
+            padding: 18px 30px;
+            border-radius: 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(255, 165, 0, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 165, 0, 0.4);
+            background: linear-gradient(135deg, #fff, #ffd700);
+        }
+
+        .cta-btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* Footer Guarantee */
+        .guarantee {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 480px) {
+            .ticket-card {
+                padding: 30px 20px;
+            }
+            .matchup {
+                font-size: 1.8rem;
+            }
+            .price-amount {
+                font-size: 2.5rem;
+            }
         }
     </style>
+
+    <!-- Google Discovery Event Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Spain vs Argentina – Match 104 Final",
+      "startDate": "2026-07-19T15:00:00-04:00",
+      "endDate": "2026-07-19T19:00:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "MetLife Stadium",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1 MetLife Stadium Dr",
+          "addressLocality": "East Rutherford",
+          "addressRegion": "NJ",
+          "postalCode": "07073",
+          "addressCountry": "US"
+        }
+      },
+      "image": [
+        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "description": "Secure your tickets for the highly anticipated Spain vs Argentina Match 104 Final live at MetLife Stadium.",
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "7150",
+        "priceCurrency": "USD",
+        "url": "https://argentinawc26.saverseats.com",
+        "availability": "https://schema.org/InStock"
+      },
+      "performer": [
+        {
+          "@type": "SportsTeam",
+          "name": "Spain"
+        },
+        {
+          "@type": "SportsTeam",
+          "name": "Argentina"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
-<div class="main-card">
-    <h1>MATCH 102: ENGLAND vs ARGENTINA</h1>
-    <div class="data-grid">
-        <div class="data-box">SCORE<span id="score" class="data-val">0 - 0</span></div>
-        <div class="data-box">MINUTES<span id="mins" class="data-val">0</span></div>
-        <div class="data-box">STATUS<span id="stat-val" class="data-val">0</span></div>
-        <div class="data-box">LIVE<span id="live-stat" class="data-val">Ready</span></div>
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <div class="ticket-card">
+            <span class="badge">Match 104 • The Final</span>
+            
+            <h1 class="matchup">
+                Spain 
+                <span>vs</span> 
+                Argentina
+            </h1>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <span><strong>Sunday, July 19, 2026</strong></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">🕒</span>
+                    <span><strong>3:00 PM</strong> Local Time</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <span><strong>MetLife Stadium</strong> • East Rutherford, NJ</span>
+                </div>
+            </div>
+
+            <div class="price-container">
+                <div class="price-label">Tickets Starting From</div>
+                <div class="price-amount"><span class="price-currency">$</span>7,150</div>
+            </div>
+
+            <a href="https://argentinawc26.saverseats.com" class="cta-btn" target="_blank" rel="noopener">
+                Secure Your Seats
+            </a>
+
+            <div class="guarantee">
+                🔒 100% Buyer Guarantee Verified Secure
+            </div>
+        </div>
     </div>
 
-    <!-- The Button -->
-    <a href="https://argentinawc26.saverseats.com" 
-       class="cta-button" 
-       target="_blank" 
-       onclick="trackClick()">VIEW LIVE TRACKER & GET TICKETS</a>
-</div>
-
-<script>
-    const NS = "saverseats_main";
-    const KEY = "53fba66fb27b4b2594dafb10a83b1000";
-    const JSON_URL = 'https://gist.githubusercontent.com/saverseats/7ada68a374797e8b479ce578956f35ed/raw/b6389921cd2f9192835dfd3d1e3e61e26214867f/world-cup-match-102-england-vs-argentina-live.json';
-
-    // 1. Data Update Function
-    async function updateData() {
-        try {
-            const res = await fetch(JSON_URL);
-            const data = await res.json();
-            document.getElementById('score').innerText = data.score || "0 - 0";
-            document.getElementById('mins').innerText = data.minutes || "0";
-            document.getElementById('stat-val').innerText = data.status || "0";
-            document.getElementById('live-stat').innerText = data.live_status || "Live";
-        } catch (e) { console.error("Fetch failed"); }
-    }
-
-    // 2. Click Tracking
-    function trackClick() {
-        fetch(`https://api.counterapi.dev/v1/${NS}/clicks/up`);
-    }
-
-    // 3. SEO Ping
-    function pingSEO() {
-        fetch(`https://api.indexnow.org/indexnow?url=${encodeURIComponent(window.location.href)}&key=${KEY}`, { method: 'POST' });
-    }
-
-    // Initialize
-    updateData();
-    pingSEO();
-    setInterval(updateData, 30000);
-</script>
 </body>
 </html>
