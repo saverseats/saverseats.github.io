@@ -34,10 +34,12 @@
             color: var(--text-light);
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             overflow-x: hidden;
             position: relative;
+            padding: 40px 0;
         }
 
         /* Hero Stadium Background with Dark Overlay */
@@ -72,6 +74,7 @@
             padding: 40px 30px;
             text-align: center;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
         }
 
         /* Badge */
@@ -196,6 +199,50 @@
             gap: 5px;
         }
 
+        /* --- NEW FAQ CSS --- */
+        .faq-section {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 35px 30px;
+            text-align: left;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .faq-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 25px;
+            color: #ffffff;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
         /* Responsive Styles */
         @media (max-width: 480px) {
             .ticket-card {
@@ -206,6 +253,12 @@
             }
             .price-amount {
                 font-size: 2.5rem;
+            }
+            .faq-section {
+                padding: 25px 20px;
+            }
+            .faq-title {
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -262,12 +315,47 @@
       }
     }
     </script>
+
+    <!-- NEW Google FAQ Schema Markup for AI Overviews (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much are tickets for Spain vs Argentina Final Match 104?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Resale tickets for the Spain vs Argentina Match 104 Final start at $7,150. You can browse real-time availability and secure guaranteed seats directly through saverseats.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the Spain vs Argentina Match 104 being played?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The match will be played at MetLife Stadium, located at 1 MetLife Stadium Dr, East Rutherford, New Jersey, United States."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What date and time is the Spain vs Argentina Final scheduled for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The final is scheduled for Sunday, July 19, 2026, at 3:00 PM local time (EDT)."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
     <div class="background-overlay"></div>
 
     <div class="container">
+        <!-- Main Ticket Card -->
         <main class="ticket-card">
             <span class="badge">Match 104 • The Final</span>
             
@@ -305,6 +393,26 @@
                 <span aria-hidden="true">🔒</span> 100% Buyer Guarantee Verified Secure
             </div>
         </main>
+
+        <!-- NEW Visual FAQ Section for Search Engines & Users -->
+        <section class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">How much are tickets for Spain vs Argentina Final Match 104?</h3>
+                <p class="faq-answer">Resale tickets for the historic Spain vs Argentina Match 104 Final start at <strong>$7,150</strong>. Due to unprecedented demand, availability changes rapidly. You can check current inventory and secure verified tickets directly via <a href="https://argentinawc26.saverseats.com" style="color: var(--primary); text-decoration: underline;" target="_blank">saverseats.com</a>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Where is the Spain vs Argentina Match 104 being played?</h3>
+                <p class="faq-answer">The final will take place live at <strong>MetLife Stadium</strong>, located in East Rutherford, New Jersey (New York metropolitan area). </p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What date and time is the Spain vs Argentina Final?</h3>
+                <p class="faq-answer">The match is officially scheduled for <strong>Sunday, July 19, 2026, at 3:00 PM local time (EDT)</strong>. Gates are expected to open early, so transit planning is highly recommended.</p>
+            </div>
+        </section>
     </div>
 
 </body>
