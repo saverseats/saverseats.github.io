@@ -237,11 +237,13 @@
       ],
       "description": "Secure your tickets for the highly anticipated Spain vs Argentina Match 104 Final live at MetLife Stadium.",
       "offers": {
-        "@type": "AggregateOffer",
-        "lowPrice": "7150",
+        "@type": "Offer",
+        "price": "7150",
         "priceCurrency": "USD",
+        "priceValidUntil": "2026-07-20",
         "url": "https://argentinawc26.saverseats.com",
-        "availability": "https://schema.org/InStock"
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-07-10T00:00:00-04:00"
       },
       "performer": [
         {
@@ -252,7 +254,12 @@
           "@type": "SportsTeam",
           "name": "Argentina"
         }
-      ]
+      ],
+      "organizer": {
+        "@type": "Organization",
+        "name": "FIFA",
+        "url": "https://www.fifa.com"
+      }
     }
     </script>
 </head>
@@ -261,7 +268,7 @@
     <div class="background-overlay"></div>
 
     <div class="container">
-        <div class="ticket-card">
+        <main class="ticket-card">
             <span class="badge">Match 104 • The Final</span>
             
             <h1 class="matchup">
@@ -272,15 +279,15 @@
 
             <div class="details-grid">
                 <div class="detail-item">
-                    <span class="detail-icon">📅</span>
+                    <span class="detail-icon" aria-hidden="true">📅</span>
                     <span><strong>Sunday, July 19, 2026</strong></span>
                 </div>
                 <div class="detail-item">
-                    <span class="detail-icon">🕒</span>
+                    <span class="detail-icon" aria-hidden="true">🕒</span>
                     <span><strong>3:00 PM</strong> Local Time</span>
                 </div>
                 <div class="detail-item">
-                    <span class="detail-icon">📍</span>
+                    <span class="detail-icon" aria-hidden="true">📍</span>
                     <span><strong>MetLife Stadium</strong> • East Rutherford, NJ</span>
                 </div>
             </div>
@@ -295,9 +302,9 @@
             </a>
 
             <div class="guarantee">
-                🔒 100% Buyer Guarantee Verified Secure
+                <span aria-hidden="true">🔒</span> 100% Buyer Guarantee Verified Secure
             </div>
-        </div>
+        </main>
     </div>
 
 </body>
