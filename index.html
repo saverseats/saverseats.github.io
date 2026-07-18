@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZM725FTX7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZM725FTX7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-CZM725FTX7');
-</script>
+      gtag('config', 'G-CZM725FTX7');
+    </script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain vs Argentina | Final - Match 104 Tickets | MetLife Stadium</title>
-    <meta name="description" content="Get your tickets for Spain vs Argentina – Match 104 Final on Sunday, July 19 at MetLife Stadium. Secure your seats starting at $7,150.">
+    <title>France vs England | Third Place - Match 103 Tickets | Hard Rock Stadium</title>
+    <meta name="description" content="Get your tickets for France vs England – Match 103 Third Place on Saturday, July 18 at Hard Rock Stadium. Secure your seats starting at $440.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,11 @@
             --primary: #FFD700; /* Gold accent */
             --secondary: #00A86B; /* Vibrant green accent */
             --dark-bg: #0d0f12;
-            --card-bg: rgba(255, 255, 255, 0.07);
+            --card-bg: rgba(255, 255, 255, 0.06);
+            --border-glass: rgba(255, 255, 255, 0.1);
             --text-light: #ffffff;
             --text-muted: #a0aec0;
+            --bts-color: #bb86fc;
         }
 
         * {
@@ -59,7 +61,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(to bottom, rgba(13, 15, 18, 0.7), rgba(13, 15, 18, 0.95)), 
+            background-image: linear-gradient(to bottom, rgba(13, 15, 18, 0.75), rgba(13, 15, 18, 0.95)), 
                               url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
@@ -74,20 +76,23 @@
             margin: auto;
         }
 
-        /* Glassmorphism Card */
-        .ticket-card {
+        /* Glassmorphism Card Base */
+        .ticket-card, .faq-section, .bts-section {
             background: var(--card-bg);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-glass);
             border-radius: 24px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
         }
 
-        /* Badge */
+        .ticket-card {
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        /* Badges */
         .badge {
             display: inline-block;
             background: linear-gradient(135deg, #ff3366, #ff003c);
@@ -100,6 +105,30 @@
             border-radius: 50px;
             margin-bottom: 25px;
             box-shadow: 0 4px 15px rgba(255, 0, 60, 0.3);
+        }
+
+        .tour-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #8a2be2, #4b0082);
+            color: white;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 4px 14px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }
+
+        .status-badge.gold {
+            background: rgba(255, 215, 0, 0.2);
+            color: var(--primary);
+            border: 1px solid rgba(255, 215, 0, 0.4);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
         }
 
         /* Matchup Title */
@@ -171,20 +200,23 @@
             color: var(--primary);
         }
 
-        /* CTA Button */
-        .cta-btn {
+        /* CTA Buttons */
+        .cta-btn, .bts-cta {
             display: block;
-            background: linear-gradient(135deg, #ffd700, #ffa500);
-            color: #000;
             text-decoration: none;
-            padding: 18px 30px;
-            border-radius: 12px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #ffd700, #ffa500);
+            color: #000;
+            padding: 18px 30px;
+            border-radius: 12px;
+            font-size: 1.2rem;
             box-shadow: 0 10px 20px rgba(255, 165, 0, 0.2);
         }
 
@@ -194,11 +226,23 @@
             background: linear-gradient(135deg, #fff, #ffd700);
         }
 
-        .cta-btn:active {
-            transform: translateY(-1px);
+        .bts-cta {
+            background: linear-gradient(135deg, #8a2be2, #a855f7);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+            text-align: center;
+            white-space: nowrap;
         }
 
-        /* Footer Guarantee */
+        .bts-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
+            background: linear-gradient(135deg, #a855f7, #c084fc);
+        }
+
         .guarantee {
             margin-top: 20px;
             font-size: 0.8rem;
@@ -209,16 +253,10 @@
             gap: 5px;
         }
 
-        /* --- FAQ CSS --- */
+        /* FAQ Styling */
         .faq-section {
-            background: var(--card-bg);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
             padding: 35px 30px;
             text-align: left;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         .faq-title {
@@ -253,18 +291,136 @@
             line-height: 1.6;
         }
 
-        /* Responsive Styles */
+        /* BTS Section Layout */
+        .bts-section {
+            padding: 35px 30px;
+            text-align: left;
+        }
+
+        .artist-header {
+            margin-bottom: 25px;
+        }
+
+        .artist-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .venue-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .bts-event-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bts-event-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .date-badge {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 10px;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        .day-num {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            line-height: 1;
+        }
+
+        .month-day {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .event-details .time-stamp {
+            font-size: 0.8rem;
+            color: var(--bts-color);
+            font-weight: 600;
+        }
+
+        .event-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 2px 0;
+        }
+
+        .stadium-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .card-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .urgency-wrapper {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 580px) {
+            .bts-event-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            .card-right {
+                width: 100%;
+                align-items: flex-start;
+                text-align: left;
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
+                padding-top: 15px;
+            }
+            .bts-cta {
+                width: 100%;
+            }
+        }
+
         @media (max-width: 480px) {
             .ticket-card {
                 padding: 30px 20px;
             }
             .matchup {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
             .price-amount {
                 font-size: 2.5rem;
             }
-            .faq-section {
+            .faq-section, .bts-section {
                 padding: 25px 20px;
             }
             .faq-title {
@@ -278,44 +434,44 @@
     {
       "@context": "https://schema.org",
       "@type": "Event",
-      "name": "Spain vs Argentina – Match 104 Final",
-      "startDate": "2026-07-19T15:00:00-04:00",
-      "endDate": "2026-07-19T19:00:00-04:00",
+      "name": "France vs England – Third Place Match 103",
+      "startDate": "2026-07-18T17:00:00-04:00",
+      "endDate": "2026-07-18T21:00:00-04:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
-        "name": "MetLife Stadium",
+        "name": "Hard Rock Stadium",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1 MetLife Stadium Dr",
-          "addressLocality": "East Rutherford",
-          "addressRegion": "NJ",
-          "postalCode": "07073",
+          "streetAddress": "347 Don Shula Dr",
+          "addressLocality": "Miami Gardens",
+          "addressRegion": "FL",
+          "postalCode": "33056",
           "addressCountry": "US"
         }
       },
       "image": [
         "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"
       ],
-      "description": "Secure your tickets for the highly anticipated Spain vs Argentina Match 104 Final live at MetLife Stadium.",
+      "description": "Secure your tickets for France vs England Match 103 Third Place play-off match live at Hard Rock Stadium.",
       "offers": {
         "@type": "Offer",
-        "price": "7150",
+        "price": "440",
         "priceCurrency": "USD",
-        "priceValidUntil": "2026-07-20",
-        "url": "https://argentinawc26.saverseats.com",
+        "priceValidUntil": "2026-07-19",
+        "url": "https://saverseats.github.io/bts",
         "availability": "https://schema.org/InStock",
         "validFrom": "2026-07-10T00:00:00-04:00"
       },
       "performer": [
         {
           "@type": "SportsTeam",
-          "name": "Spain"
+          "name": "France"
         },
         {
           "@type": "SportsTeam",
-          "name": "Argentina"
+          "name": "England"
         }
       ],
       "organizer": {
@@ -334,26 +490,26 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much are tickets for Spain vs Argentina Final Match 104?",
+          "name": "How much are tickets for France vs England Third Place Match 103?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Resale tickets for the Spain vs Argentina Match 104 Final start at $7,150. You can browse real-time availability and secure guaranteed seats directly through saverseats.com."
+            "text": "Tickets for the France vs England Match 103 Third Place play-off start at $440. Real-time availability and guaranteed seats can be tracked and purchased through saverseats.github.io."
           }
         },
         {
           "@type": "Question",
-          "name": "Where is the Spain vs Argentina Match 104 being played?",
+          "name": "Where is the France vs England Match 103 being played?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The match will be played at MetLife Stadium, located at 1 MetLife Stadium Dr, East Rutherford, New Jersey, United States."
+            "text": "The third-place match will be played live at Hard Rock Stadium, located at 347 Don Shula Dr, Miami Gardens, Florida, United States."
           }
         },
         {
           "@type": "Question",
-          "name": "What date and time is the Spain vs Argentina Final scheduled for?",
+          "name": "What date and time is the France vs England match scheduled for?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The final is scheduled for Sunday, July 19, 2026, at 3:00 PM local time (EDT)."
+            "text": "The match is officially scheduled for Saturday, July 18, 2026, at 5:00 PM local time (EDT)."
           }
         }
       ]
@@ -367,35 +523,35 @@
     <div class="container">
         <!-- Main Ticket Card -->
         <main class="ticket-card">
-            <span class="badge">Match 104 • The Final</span>
+            <span class="badge">Match 103 • Third Place</span>
             
             <h1 class="matchup">
-                Spain 
+                France 
                 <span>vs</span> 
-                Argentina
+                England
             </h1>
 
             <div class="details-grid">
                 <div class="detail-item">
                     <span class="detail-icon" aria-hidden="true">📅</span>
-                    <span><strong>Sunday, July 19, 2026</strong></span>
+                    <span><strong>Saturday, July 18, 2026</strong></span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon" aria-hidden="true">🕒</span>
-                    <span><strong>3:00 PM</strong> Local Time</span>
+                    <span><strong>5:00 PM</strong> Local Time</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon" aria-hidden="true">📍</span>
-                    <span><strong>MetLife Stadium</strong> • East Rutherford, NJ</span>
+                    <span><strong>Hard Rock Stadium</strong> • Miami, FL</span>
                 </div>
             </div>
 
             <div class="price-container">
                 <div class="price-label">Tickets Starting From</div>
-                <div class="price-amount"><span class="price-currency">$</span>7,150</div>
+                <div class="price-amount"><span class="price-currency">$</span>440</div>
             </div>
 
-            <a href="https://argentinawc26.saverseats.com" class="cta-btn" target="_blank" rel="noopener">
+            <a href="https://saverseats.github.io/bts" class="cta-btn">
                 Secure Your Seats
             </a>
 
@@ -409,74 +565,72 @@
             <h2 class="faq-title">Frequently Asked Questions</h2>
             
             <div class="faq-item">
-                <h3 class="faq-question">How much are tickets for Spain vs Argentina Final Match 104?</h3>
-                <p class="faq-answer">Resale tickets for the historic Spain vs Argentina Match 104 Final start at <strong>$7,150</strong>. Due to unprecedented demand, availability changes rapidly. You can check current inventory and secure verified tickets directly via <a href="https://argentinawc26.saverseats.com" style="color: var(--primary); text-decoration: underline;" target="_blank">saverseats.com</a>.</p>
+                <h3 class="faq-question">How much are tickets for France vs England Third Place Match 103?</h3>
+                <p class="faq-answer">Resale tickets for the high-stakes France vs England Match 103 Third Place bronze medal fixture start at <strong>$440</strong>. Demand is high as the tournament reaches its final weekend. You can check inventory and secure verified tickets directly via <a href="https://saverseats.github.io/bts" style="color: var(--primary); text-decoration: underline;">saverseats.github.io</a>.</p>
             </div>
 
             <div class="faq-item">
-                <h3 class="faq-question">Where is the Spain vs Argentina Match 104 being played?</h3>
-                <p class="faq-answer">The final will take place live at <strong>MetLife Stadium</strong>, located in East Rutherford, New Jersey (New York metropolitan area). </p>
+                <h3 class="faq-question">Where is the France vs England Match 103 being played?</h3>
+                <p class="faq-answer">The match will take place live at <strong>Hard Rock Stadium</strong> in Miami (Miami Gardens), Florida, United States.</p>
             </div>
 
             <div class="faq-item">
-                <h3 class="faq-question">What date and time is the Spain vs Argentina Final?</h3>
-                <p class="faq-answer">The match is officially scheduled for <strong>Sunday, July 19, 2026, at 3:00 PM local time (EDT)</strong>. Gates are expected to open early, so transit planning is highly recommended.</p>
+                <h3 class="faq-question">What date and time is the France vs England match?</h3>
+                <p class="faq-answer">The match kick-off is officially set for <strong>Saturday, July 18, 2026, at 5:00 PM local time (EDT)</strong>. Please plan arrivals early to account for stadium security guidelines.</p>
+            </div>
+        </section>
+
+        <!-- BTS Paris Tour Section -->
+        <section class="bts-section">
+            <div class="artist-header">
+                <span class="tour-badge">ARIRANG WORLD TOUR</span>
+                <h2 class="artist-title">BTS Live in Paris</h2>
+                <p class="venue-subtitle">Stade de France • Saint-Denis, France</p>
+            </div>
+
+            <!-- BTS Date 1: July 17 -->
+            <div class="bts-event-card">
+                <div class="card-left">
+                    <div class="date-badge">
+                        <span class="day-num">17</span>
+                        <span class="month-day">Jul • Fri</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="time-stamp">⏰ 7:30 PM</span>
+                        <h3 class="event-title">BTS Tour 'ARIRANG' — Night 1</h3>
+                        <p class="stadium-text">Stade de France • Paris</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="urgency-wrapper">
+                        <span class="status-badge gold">🔥 Best-Seller</span>
+                    </div>
+                    <a href="https://bts.saverseats.com" class="bts-cta" target="_blank" rel="noopener">View Tickets</a>
+                </div>
+            </div>
+
+            <!-- BTS Date 2: July 18 -->
+            <div class="bts-event-card">
+                <div class="card-left">
+                    <div class="date-badge">
+                        <span class="day-num">18</span>
+                        <span class="month-day">Jul • Sat</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="time-stamp">⏰ 8:00 PM</span>
+                        <h3 class="event-title">BTS Tour 'ARIRANG' — Night 2</h3>
+                        <p class="stadium-text">Stade de France • Paris</p>
+                    </div>
+                </div>
+                <div class="card-right">
+                    <div class="urgency-wrapper">
+                        <span class="status-badge gold">🔥 Best-Seller</span>
+                    </div>
+                    <a href="https://bts.saverseats.com" class="bts-cta" target="_blank" rel="noopener">View Tickets</a>
+                </div>
             </div>
         </section>
     </div>
 
 </body>
 </html>
-
-<!-- BTS Paris Tour Section (Paste directly under your soccer final card) -->
-<section class="bts-section">
-    <div class="artist-header">
-        <span class="tour-badge">ARIRANG WORLD TOUR</span>
-        <h2 class="artist-title">BTS Live in Paris</h2>
-        <p class="venue-subtitle">Stade de France • Saint-Denis, France</p>
-    </div>
-
-    <!-- BTS Date 1: July 17 -->
-    <div class="bts-event-card best-seller">
-        <div class="card-left">
-            <div class="date-badge">
-                <span class="day-num">17</span>
-                <span class="month-day">Jul • Fri</span>
-            </div>
-            <div class="event-details">
-                <span class="time-stamp">⏰ 7:30 PM</span>
-                <h3 class="event-title">BTS Tour 'ARIRANG' — Night 1</h3>
-                <p class="stadium-text">Stade de France • Paris</p>
-            </div>
-        </div>
-        <div class="card-right">
-            <div class="urgency-wrapper">
-                <span class="status-badge gold">🔥 Best-Seller</span>
-                <p class="urgency-text">Selling out soon — get tickets now!</p>
-            </div>
-            <a href="https://bts.saverseats.com" class="bts-cta" target="_blank" rel="noopener">View Tickets</a>
-        </div>
-    </div>
-
-    <!-- BTS Date 2: July 18 -->
-    <div class="bts-event-card best-seller">
-        <div class="card-left">
-            <div class="date-badge">
-                <span class="day-num">18</span>
-                <span class="month-day">Jul • Sat</span>
-            </div>
-            <div class="event-details">
-                <span class="time-stamp">⏰ 8:00 PM</span>
-                <h3 class="event-title">BTS Tour 'ARIRANG' — Night 2</h3>
-                <p class="stadium-text">Stade de France • Paris</p>
-            </div>
-        </div>
-        <div class="card-right">
-            <div class="urgency-wrapper">
-                <span class="status-badge gold">🔥 Best-Seller</span>
-                <p class="urgency-text">Selling out soon — get tickets now!</p>
-            </div>
-            <a href="https://bts.saverseats.com" class="bts-cta" target="_blank" rel="noopener">View Tickets</a>
-        </div>
-    </div>
-</section>
