@@ -13,8 +13,8 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>France vs England | Third Place - Match 103 Tickets | Hard Rock Stadium</title>
-    <meta name="description" content="Get your tickets for France vs England – Match 103 Third Place on Saturday, July 18 at Hard Rock Stadium. Secure your seats starting at $440.">
+    <title>World Cup 2026 Finals & Play-offs Tickets | Saverseats</title>
+    <meta name="description" content="Secure tickets for the Spain vs Argentina Final at MetLife Stadium and France vs England Third Place at Hard Rock Stadium. Authorized event schemas included.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,8 +76,8 @@
             margin: auto;
         }
 
-        /* Glassmorphism Card Base */
-        .ticket-card, .faq-section, .bts-section {
+        /* Glassmorphism Section/Card Base */
+        .main-card, .list-section {
             background: var(--card-bg);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -85,10 +85,10 @@
             border-radius: 24px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
+            padding: 35px 30px;
         }
 
-        .ticket-card {
-            padding: 40px 30px;
+        .main-card {
             text-align: center;
         }
 
@@ -107,6 +107,19 @@
             box-shadow: 0 4px 15px rgba(255, 0, 60, 0.3);
         }
 
+        .section-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #007bff, #00a86b);
+            color: white;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 4px 14px;
+            border-radius: 50px;
+            margin-bottom: 15px;
+        }
+
         .tour-badge {
             display: inline-block;
             background: linear-gradient(135deg, #8a2be2, #4b0082);
@@ -121,17 +134,17 @@
         }
 
         .status-badge.gold {
-            background: rgba(255, 215, 0, 0.2);
+            background: rgba(255, 215, 0, 0.15);
             color: var(--primary);
-            border: 1px solid rgba(255, 215, 0, 0.4);
-            font-size: 0.75rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            font-size: 0.72rem;
             font-weight: 700;
-            padding: 3px 10px;
+            padding: 2px 8px;
             border-radius: 4px;
             text-transform: uppercase;
         }
 
-        /* Matchup Title */
+        /* Hero Matchup Title */
         .matchup {
             font-family: 'Montserrat', sans-serif;
             font-size: 2.5rem;
@@ -149,7 +162,7 @@
             font-weight: 400;
         }
 
-        /* Event Details */
+        /* Event Details Grid */
         .details-grid {
             margin: 30px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -200,8 +213,8 @@
             color: var(--primary);
         }
 
-        /* CTA Buttons */
-        .cta-btn, .bts-cta {
+        /* Buttons & CTAs */
+        .cta-btn, .list-btn {
             display: block;
             text-decoration: none;
             font-family: 'Montserrat', sans-serif;
@@ -209,6 +222,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.3s ease;
+            text-align: center;
         }
 
         .cta-btn {
@@ -226,21 +240,30 @@
             background: linear-gradient(135deg, #fff, #ffd700);
         }
 
-        .bts-cta {
-            background: linear-gradient(135deg, #8a2be2, #a855f7);
+        .list-btn {
+            background: linear-gradient(135deg, #007bff, #0056b3);
             color: #fff;
             padding: 12px 20px;
             border-radius: 8px;
             font-size: 0.9rem;
-            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
-            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
             white-space: nowrap;
         }
 
-        .bts-cta:hover {
+        .list-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+            background: linear-gradient(135deg, #3395ff, #007bff);
+        }
+
+        .list-btn.bts {
+            background: linear-gradient(135deg, #8a2be2, #a855f7);
+            box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+        }
+
+        .list-btn.bts:hover {
             background: linear-gradient(135deg, #a855f7, #c084fc);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.5);
         }
 
         .guarantee {
@@ -253,12 +276,106 @@
             gap: 5px;
         }
 
-        /* FAQ Styling */
-        .faq-section {
-            padding: 35px 30px;
-            text-align: left;
+        /* Clean List Layout (Used for secondary listings) */
+        .section-header {
+            margin-bottom: 25px;
         }
 
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .section-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .list-item-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .list-item-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .date-box {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 10px;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        .date-num {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            line-height: 1;
+        }
+
+        .date-meta {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-top: 4px;
+        }
+
+        .item-details .time-marker {
+            font-size: 0.8rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .item-details .time-marker.purple {
+            color: var(--bts-color);
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 2px 0;
+        }
+
+        .item-venue {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .item-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .urgency-wrapper {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* FAQ Styling */
         .faq-title {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.6rem;
@@ -291,127 +408,27 @@
             line-height: 1.6;
         }
 
-        /* BTS Section Layout */
-        .bts-section {
-            padding: 35px 30px;
-            text-align: left;
-        }
-
-        .artist-header {
-            margin-bottom: 25px;
-        }
-
-        .artist-title {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #ffffff;
-        }
-
-        .venue-subtitle {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
-
-        .bts-event-card {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .bts-event-card:last-child {
-            margin-bottom: 0;
-        }
-
-        .card-left {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .date-badge {
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 12px;
-            padding: 10px;
-            min-width: 70px;
-            text-align: center;
-        }
-
-        .day-num {
-            display: block;
-            font-size: 1.5rem;
-            font-weight: 800;
-            font-family: 'Montserrat', sans-serif;
-            color: #fff;
-            line-height: 1;
-        }
-
-        .month-day {
-            display: block;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            margin-top: 4px;
-        }
-
-        .event-details .time-stamp {
-            font-size: 0.8rem;
-            color: var(--bts-color);
-            font-weight: 600;
-        }
-
-        .event-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin: 2px 0;
-        }
-
-        .stadium-text {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-        }
-
-        .card-right {
-            text-align: right;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 10px;
-        }
-
-        .urgency-wrapper {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-        }
-
         /* Responsive Breakpoints */
         @media (max-width: 580px) {
-            .bts-event-card {
+            .list-item-card {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 15px;
             }
-            .card-right {
+            .item-right {
                 width: 100%;
                 align-items: flex-start;
                 text-align: left;
                 border-top: 1px solid rgba(255, 255, 255, 0.08);
                 padding-top: 15px;
             }
-            .bts-cta {
+            .list-btn {
                 width: 100%;
             }
         }
 
         @media (max-width: 480px) {
-            .ticket-card {
+            .main-card {
                 padding: 30px 20px;
             }
             .matchup {
@@ -420,7 +437,7 @@
             .price-amount {
                 font-size: 2.5rem;
             }
-            .faq-section, .bts-section {
+            .list-section {
                 padding: 25px 20px;
             }
             .faq-title {
@@ -429,91 +446,91 @@
         }
     </style>
 
-    <!-- Google Discovery Event Schema Markup (JSON-LD) -->
+    <!-- Schema Markup Bundle (JSON-LD) -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "France vs England – Third Place Match 103",
-      "startDate": "2026-07-18T17:00:00-04:00",
-      "endDate": "2026-07-18T21:00:00-04:00",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "Hard Rock Stadium",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "347 Don Shula Dr",
-          "addressLocality": "Miami Gardens",
-          "addressRegion": "FL",
-          "postalCode": "33056",
-          "addressCountry": "US"
-        }
-      },
-      "image": [
-        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"
-      ],
-      "description": "Secure your tickets for France vs England Match 103 Third Place play-off match live at Hard Rock Stadium.",
-      "offers": {
-        "@type": "Offer",
-        "price": "440",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2026-07-19",
-        "url": "https://saverseats.github.io/bts",
-        "availability": "https://schema.org/InStock",
-        "validFrom": "2026-07-10T00:00:00-04:00"
-      },
-      "performer": [
-        {
-          "@type": "SportsTeam",
-          "name": "France"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Spain vs Argentina – Match 104 Final",
+        "startDate": "2026-07-19T15:00:00-04:00",
+        "endDate": "2026-07-19T19:00:00-04:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "MetLife Stadium",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1 MetLife Stadium Dr",
+            "addressLocality": "East Rutherford",
+            "addressRegion": "NJ",
+            "postalCode": "07073",
+            "addressCountry": "US"
+          }
         },
-        {
-          "@type": "SportsTeam",
-          "name": "England"
+        "image": [
+          "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Secure your tickets for the Spain vs Argentina Match 104 Final live at MetLife Stadium.",
+        "offers": {
+          "@type": "Offer",
+          "price": "7150",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-07-20",
+          "url": "https://saverseats.github.io/bts",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-07-10T00:00:00-04:00"
+        },
+        "performer": [
+          {"@type": "SportsTeam", "name": "Spain"},
+          {"@type": "SportsTeam", "name": "Argentina"}
+        ],
+        "organizer": {
+          "@type": "Organization",
+          "name": "FIFA",
+          "url": "https://www.fifa.com"
         }
-      ],
-      "organizer": {
-        "@type": "Organization",
-        "name": "FIFA",
-        "url": "https://www.fifa.com"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "France vs England – Third Place Match 103",
+        "startDate": "2026-07-18T17:00:00-04:00",
+        "endDate": "2026-07-18T21:00:00-04:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Hard Rock Stadium",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "347 Don Shula Dr",
+            "addressLocality": "Miami Gardens",
+            "addressRegion": "FL",
+            "postalCode": "33056",
+            "addressCountry": "US"
+          }
+        },
+        "image": [
+          "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80"
+        ],
+        "description": "Secure your tickets for France vs England Match 103 Third Place live at Hard Rock Stadium.",
+        "offers": {
+          "@type": "Offer",
+          "price": "440",
+          "priceCurrency": "USD",
+          "priceValidUntil": "2026-07-19",
+          "url": "https://francewc26.saverseats.com",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-07-10T00:00:00-04:00"
+        },
+        "performer": [
+          {"@type": "SportsTeam", "name": "France"},
+          {"@type": "SportsTeam", "name": "England"}
+        ]
       }
-    }
-    </script>
-
-    <!-- Google FAQ Schema Markup for AI Overviews (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much are tickets for France vs England Third Place Match 103?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tickets for the France vs England Match 103 Third Place play-off start at $440. Real-time availability and guaranteed seats can be tracked and purchased through saverseats.github.io."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Where is the France vs England Match 103 being played?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The third-place match will be played live at Hard Rock Stadium, located at 347 Don Shula Dr, Miami Gardens, Florida, United States."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What date and time is the France vs England match scheduled for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The match is officially scheduled for Saturday, July 18, 2026, at 5:00 PM local time (EDT)."
-          }
-        }
-      ]
-    }
+    ]
     </script>
 </head>
 <body>
@@ -521,34 +538,35 @@
     <div class="background-overlay"></div>
 
     <div class="container">
-        <!-- Main Ticket Card -->
-        <main class="ticket-card">
-            <span class="badge">Match 103 • Third Place</span>
+        
+        <!-- MAIN CARD: Spain vs Argentina (Featured Main Spot) -->
+        <main class="main-card">
+            <span class="badge">Match 104 • The Final</span>
             
             <h1 class="matchup">
-                France 
+                Spain 
                 <span>vs</span> 
-                England
+                Argentina
             </h1>
 
             <div class="details-grid">
                 <div class="detail-item">
                     <span class="detail-icon" aria-hidden="true">📅</span>
-                    <span><strong>Saturday, July 18, 2026</strong></span>
+                    <span><strong>Sunday, July 19, 2026</strong></span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon" aria-hidden="true">🕒</span>
-                    <span><strong>5:00 PM</strong> Local Time</span>
+                    <span><strong>3:00 PM</strong> Local Time</span>
                 </div>
                 <div class="detail-item">
                     <span class="detail-icon" aria-hidden="true">📍</span>
-                    <span><strong>Hard Rock Stadium</strong> • Miami, FL</span>
+                    <span><strong>MetLife Stadium</strong> • East Rutherford, NJ</span>
                 </div>
             </div>
 
             <div class="price-container">
                 <div class="price-label">Tickets Starting From</div>
-                <div class="price-amount"><span class="price-currency">$</span>440</div>
+                <div class="price-amount"><span class="price-currency">$</span>7,150</div>
             </div>
 
             <a href="https://saverseats.github.io/bts" class="cta-btn">
@@ -560,74 +578,78 @@
             </div>
         </main>
 
-        <!-- Visual FAQ Section for Search Engines & Users -->
-        <section class="faq-section">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <h3 class="faq-question">How much are tickets for France vs England Third Place Match 103?</h3>
-                <p class="faq-answer">Resale tickets for the high-stakes France vs England Match 103 Third Place bronze medal fixture start at <strong>$440</strong>. Demand is high as the tournament reaches its final weekend. You can check inventory and secure verified tickets directly via <a href="https://saverseats.github.io/bts" style="color: var(--primary); text-decoration: underline;">saverseats.github.io</a>.</p>
+        <!-- LIST SECTION: Play-offs & Other Matches (In BTS List Style layout) -->
+        <section class="list-section">
+            <div class="section-header">
+                <span class="section-badge">Tournament Play-offs</span>
+                <h2 class="section-title">Third-Place Consolation</h2>
+                <p class="section-subtitle">Live International Football Fixtures</p>
             </div>
 
-            <div class="faq-item">
-                <h3 class="faq-question">Where is the France vs England Match 103 being played?</h3>
-                <p class="faq-answer">The match will take place live at <strong>Hard Rock Stadium</strong> in Miami (Miami Gardens), Florida, United States.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">What date and time is the France vs England match?</h3>
-                <p class="faq-answer">The match kick-off is officially set for <strong>Saturday, July 18, 2026, at 5:00 PM local time (EDT)</strong>. Please plan arrivals early to account for stadium security guidelines.</p>
+            <!-- France vs England Card -->
+            <div class="list-item-card">
+                <div class="card-left">
+                    <div class="date-box">
+                        <span class="date-num">18</span>
+                        <span class="date-meta">Jul • Sat</span>
+                    </div>
+                    <div class="item-details">
+                        <span class="time-marker">⏰ 5:00 PM</span>
+                        <h3 class="item-title">France vs England (Match 103)</h3>
+                        <p class="item-venue">Hard Rock Stadium • Miami, FL</p>
+                    </div>
+                </div>
+                <div class="item-right">
+                    <div class="urgency-wrapper">
+                        <span class="status-badge gold">Starting at $440</span>
+                    </div>
+                    <a href="https://francewc26.saverseats.com" class="list-btn" target="_blank" rel="noopener">View Tickets</a>
+                </div>
             </div>
         </section>
 
-        <!-- BTS Paris Tour Section -->
-        <section class="bts-section">
-            <div class="artist-header">
+        <!-- LIST SECTION: BTS Music Tour (Cleaned up to exclude July 17th) -->
+        <section class="list-section">
+            <div class="section-header">
                 <span class="tour-badge">ARIRANG WORLD TOUR</span>
-                <h2 class="artist-title">BTS Live in Paris</h2>
-                <p class="venue-subtitle">Stade de France • Saint-Denis, France</p>
+                <h2 class="section-title">BTS Live in Paris</h2>
+                <p class="section-subtitle">Stade de France • Saint-Denis, France</p>
             </div>
 
-            <!-- BTS Date 1: July 17 -->
-            <div class="bts-event-card">
+            <!-- BTS Date 2: July 18 Only -->
+            <div class="list-item-card">
                 <div class="card-left">
-                    <div class="date-badge">
-                        <span class="day-num">17</span>
-                        <span class="month-day">Jul • Fri</span>
+                    <div class="date-box">
+                        <span class="date-num">18</span>
+                        <span class="date-meta">Jul • Sat</span>
                     </div>
-                    <div class="event-details">
-                        <span class="time-stamp">⏰ 7:30 PM</span>
-                        <h3 class="event-title">BTS Tour 'ARIRANG' — Night 1</h3>
-                        <p class="stadium-text">Stade de France • Paris</p>
+                    <div class="item-details">
+                        <span class="time-marker purple">⏰ 8:00 PM</span>
+                        <h3 class="item-title">BTS Tour 'ARIRANG' — Night 2</h3>
+                        <p class="item-venue">Stade de France • Paris</p>
                     </div>
                 </div>
-                <div class="card-right">
+                <div class="item-right">
                     <div class="urgency-wrapper">
                         <span class="status-badge gold">🔥 Best-Seller</span>
                     </div>
-                    <a href="https://bts.saverseats.com" class="bts-cta" target="_blank" rel="noopener">View Tickets</a>
+                    <a href="https://bts.saverseats.com" class="list-btn bts" target="_blank" rel="noopener">View Tickets</a>
                 </div>
             </div>
+        </section>
 
-            <!-- BTS Date 2: July 18 -->
-            <div class="bts-event-card">
-                <div class="card-left">
-                    <div class="date-badge">
-                        <span class="day-num">18</span>
-                        <span class="month-day">Jul • Sat</span>
-                    </div>
-                    <div class="event-details">
-                        <span class="time-stamp">⏰ 8:00 PM</span>
-                        <h3 class="event-title">BTS Tour 'ARIRANG' — Night 2</h3>
-                        <p class="stadium-text">Stade de France • Paris</p>
-                    </div>
-                </div>
-                <div class="card-right">
-                    <div class="urgency-wrapper">
-                        <span class="status-badge gold">🔥 Best-Seller</span>
-                    </div>
-                    <a href="https://bts.saverseats.com" class="bts-cta" target="_blank" rel="noopener">View Tickets</a>
-                </div>
+        <!-- Visual FAQ Section for AI Search Engine Summaries -->
+        <section class="list-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">How much are tickets for Spain vs Argentina Final Match 104?</h3>
+                <p class="faq-answer">Resale tickets for the historic Spain vs Argentina Match 104 Final start at <strong>$7,150</strong>. Due to high demand, availability updates continuously on saverseats.github.io.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How much are tickets for France vs England Third Place Match 103?</h3>
+                <p class="faq-answer">Resale tickets for France vs England Match 103 Third Place start at <strong>$440</strong>. You can view secure seating maps directly at <a href="https://francewc26.saverseats.com" style="color: var(--primary); text-decoration: underline;">francewc26.saverseats.com</a>.</p>
             </div>
         </section>
     </div>
