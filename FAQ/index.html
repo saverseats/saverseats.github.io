@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | Saverseats Tickets</title>
+    <meta name="description" content="Find answers about secure tickets for sports, concerts, attractions, and tours. Learn about our 100% Buyer Guarantee and real-time live event price tracking.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #FFD700;
+            --primary-hover: #fff;
+            --dark-bg: #0d0f12;
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --card-hover: rgba(255, 255, 255, 0.07);
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --text-main: #ffffff;
+            --text-muted: #a0aec0;
+            --max-width: 750px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 60px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Ambient subtle background glow */
+        body::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, rgba(13, 15, 18, 0) 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            font-weight: 300;
+        }
+
+        /* Navigation Quick Filter Anchors */
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .category-nav a {
+            text-decoration: none;
+            color: var(--text-main);
+            background: var(--card-bg);
+            border: 1px solid var(--border-glass);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .category-nav a:hover {
+            border-color: var(--primary);
+            background: rgba(255, 215, 0, 0.05);
+            transform: translateY(-1px);
+        }
+
+        /* FAQ Schema Accordions */
+        .faq-group {
+            margin-bottom: 35px;
+        }
+
+        .group-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            padding-left: 5px;
+        }
+
+        details {
+            background: var(--card-bg);
+            border: 1px solid var(--border-glass);
+            border-radius: 14px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+
+        details[open] {
+            background: var(--card-hover);
+            border-color: rgba(255, 215, 0, 0.2);
+        }
+
+        summary {
+            list-style: none;
+            padding: 20px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            cursor: pointer;
+            position: relative;
+            user-select: none;
+            padding-right: 50px;
+        }
+
+        /* Custom marker arrow */
+        summary::after {
+            content: '＋';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        details[open] summary::after {
+            content: '－';
+            color: var(--primary);
+        }
+
+        /* Hide default summary arrow in Webkit browsers */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .answer-content {
+            padding: 0 20px 20px 20px;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            padding-top: 15px;
+        }
+
+        /* Smart Inline Links */
+        .answer-content a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dashed rgba(255, 215, 0, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        .answer-content a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        /* Sticky Help Callout */
+        .footer-cta {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .footer-cta h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .footer-cta p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-main {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700, #ffa500);
+            color: #0d0f12;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-main:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 165, 0, 0.25);
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 40px 15px; }
+            h1 { font-size: 1.75rem; }
+            summary { font-size: 0.98rem; padding: 16px; }
+            .answer-content { padding: 0 16px 16px 16px; }
+        }
+    </style>
+
+    <!-- Native JSON-LD Structured Data Layer for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does Saverseats find the cheapest secondary market tickets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Saverseats continuously aggregates real-time inventories across major secondary networks to highlight price drops and secure below-market seats. Whether you are looking for Live Sports Matches, sold-out stadium Concerts, major theme park Attractions, or premium Guided Tours, the platform filters listings to show you the best current deals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are tickets purchased on Saverseats guaranteed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every order is backed by a 100% Buyer Guarantee. This ensures your tickets will be completely authentic, valid for entry, and delivered on time before the gates open."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time to buy tickets when prices are dropping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ticket prices in the secondary market are fluid. For high-demand events like the World Cup Finals or major pop artist Music Tours, prices often fluctuate heavily in the 24 to 72 hours leading up to the event. If you see a price drop that fits your budget, it is highly recommended to lock it in immediately before premium seating sections sell out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I choose my exact seats and rows?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. When browsing Live Concerts or major Sports Leagues, you can utilize interactive venue seating charts to filter by section, row, and price range to find your exact preferred viewing angle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are digital tickets delivered to my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most modern events utilize mobile transfer. Once your order is processed, your digital tickets will be transferred directly to your mobile device or emailed via a secure download link well ahead of gate times."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer tickets for global sightseeing and city tours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Saverseats covers a massive catalog of global destination passes. You can secure immediate entry vouchers for popular Local Attractions, museums, and curated Travel Tours across multiple countries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if an event is postponed or rescheduled?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If an event is rescheduled, your original tickets remain completely valid for the new date. If an event is entirely canceled without a backup date, you will receive a full refund or equivalent platform credit according to our policy guidelines."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <a href="https://saverseats.com" class="logo">SAVER<span>SEATS</span></a>
+            <h1>Ticket Support & FAQ Portal</h1>
+            <p class="subtitle">Real-time marketplace updates, policies, and booking explanations</p>
+        </header>
+
+        <!-- Dynamic Filter Strip to anchor algorithms -->
+        <div class="category-nav">
+            <a href="https://saverseats.com">🏆 Sports Matches</a>
+            <a href="https://saverseats.com">🎤 Concert Venues</a>
+            <a href="https://saverseats.com">🎢 Family Attractions</a>
+            <a href="https://saverseats.com">🗺️ Guided Tours</a>
+        </div>
+
+        <!-- FAQ Content Matrix -->
+        <main>
+            
+            <div class="faq-group">
+                <h2 class="group-title">General Ticket Purchasing</h2>
+                
+                <details>
+                    <summary>How does Saverseats find the cheapest secondary market tickets?</summary>
+                    <div class="answer-content">
+                        Saverseats continuously aggregates real-time inventories across major secondary networks to highlight price drops and secure below-market seats. Whether you are looking for <a href="https://saverseats.com">Live Sports Matches</a>, sold-out stadium <a href="https://saverseats.com">Concerts</a>, major theme park <a href="https://saverseats.com">Attractions</a>, or premium <a href="https://saverseats.com">Guided Tours</a>, the platform filters listings to show you the best current deals.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Are tickets purchased on Saverseats guaranteed?</summary>
+                    <div class="answer-content">
+                        Yes. Every order is backed by a <strong>100% Buyer Guarantee</strong>. This ensures your tickets will be completely authentic, valid for entry, and delivered on time before the gates open.
+                    </div>
+                </details>
+            </div>
+
+            <div class="faq-group">
+                <h2 class="group-title">Sports, Concerts & Live Events</h2>
+
+                <details>
+                    <summary>When is the best time to buy tickets when prices are dropping?</summary>
+                    <div class="answer-content">
+                        Ticket prices in the secondary market are fluid. For high-demand events like the <a href="https://saverseats.com">World Cup Finals</a> or major pop artist <a href="https://saverseats.com">Music Tours</a>, prices often fluctuate heavily in the 24 to 72 hours leading up to the event. If you see a price drop that fits your budget, it is highly recommended to lock it in immediately before premium seating sections sell out.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Can I choose my exact seats and rows?</summary>
+                    <div class="answer-content">
+                        Absolutely. When browsing <a href="https://saverseats.com">Live Concerts</a> or major <a href="https://saverseats.com">Sports Leagues</a>, you can utilize interactive venue seating charts to filter by section, row, and price range to find your exact preferred viewing angle.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>How are digital tickets delivered to my phone?</summary>
+                    <div class="answer-content">
+                        Most modern events utilize mobile transfer. Once your order is processed, your digital tickets will be transferred directly to your mobile device or emailed via a secure download link well ahead of gate times.
+                    </div>
+                </details>
+            </div>
+
+            <div class="faq-group">
+                <h2 class="group-title">Attractions, Travel & Tours</h2>
+
+                <details>
+                    <summary>Do you offer tickets for global sightseeing and city tours?</summary>
+                    <div class="answer-content">
+                        Yes, Saverseats covers a massive catalog of global destination passes. You can secure immediate entry vouchers for popular <a href="https://saverseats.com">Local Attractions</a>, museums, and curated <a href="https://saverseats.com">Travel Tours</a> across multiple countries.
+                    </div>
+                </details>
+
+                <details>
+                    <summary>What should I do if an event is postponed or rescheduled?</summary>
+                    <div class="answer-content">
+                        If an event is rescheduled, your original tickets remain completely valid for the new date. If an event is entirely canceled without a backup date, you will receive a full refund or equivalent platform credit according to our policy guidelines.
+                    </div>
+                </details>
+            </div>
+
+        </main>
+
+        <footer class="footer-cta">
+            <h3>Looking for Specific Event Tickets?</h3>
+            <p>Skip the queues and access direct pricing tables across thousands of live markets worldwide.</p>
+            <a href="https://saverseats.com" class="btn-main">Browse Main Ticket Directory</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
