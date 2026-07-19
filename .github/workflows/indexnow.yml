@@ -1,0 +1,15 @@
+name: IndexNow Automatic Ping
+
+on:
+  push:
+    branches:
+      - main # Triggers automatically when you push to your main branch
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Bing and Yahoo
+        run: |
+          curl -s "https://www.bing.com/indexnow?url=https://saverseats.github.io/&key=667b2d5a995f4fbda318621be4a61327"
+          curl -s "https://www.bing.com/indexnow?url=https://saverseats.github.io/events.html&key=667b2d5a995f4fbda318621be4a61327"
