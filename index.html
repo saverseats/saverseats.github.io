@@ -20,7 +20,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght=400;600;800&family=Poppins:wght=300;400;700&display=swap" rel="stylesheet">
 
     <!-- CSS Styles -->
     <style>
@@ -109,13 +109,13 @@
 
         .nav-tabs {
             display: flex;
-            gap: 20px;
+            gap: 15px;
         }
 
         .nav-tab-item {
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
             text-decoration: none;
             text-transform: uppercase;
@@ -139,6 +139,18 @@
             background: rgba(187, 134, 252, 0.15);
             color: #d6b3ff;
             border-color: rgba(187, 134, 252, 0.7);
+        }
+
+        .nav-tab-item.faq-tab {
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: var(--primary);
+            background: rgba(255, 215, 0, 0.03);
+        }
+
+        .nav-tab-item.faq-tab:hover {
+            background: rgba(255, 215, 0, 0.12);
+            color: #fff;
+            border-color: rgba(255, 215, 0, 0.6);
         }
 
         /* Container */
@@ -330,6 +342,21 @@
             body {
                 padding-top: 90px;
             }
+            .navbar {
+                height: auto;
+                padding: 12px 0;
+            }
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-tabs {
+                gap: 8px;
+            }
+            .nav-tab-item {
+                font-size: 0.75rem;
+                padding: 4px 8px;
+            }
             .main-card {
                 padding: 30px 20px;
             }
@@ -414,6 +441,7 @@
             <div class="nav-tabs">
                 <a href="#" class="nav-tab-item active">Football</a>
                 <a href="https://saverseats.github.io/bts" class="nav-tab-item bts-tab">BTS Tour</a>
+                <a href="https://saverseats.github.io/FAQ" class="nav-tab-item faq-tab">FAQ</a>
             </div>
         </div>
     </nav>
