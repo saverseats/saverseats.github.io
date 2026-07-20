@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SaverSeats",
+  "url": "https://saverseats.com",
+  "logo": "https://saverseats.com/logo.png",
+  "description": "Global event directory for verified sports tickets (NBA, NFL, NHL, MLB, MLS), concert tours, and city attraction passes.",
+  "sameAs": [
+    "https://x.com/onsaleevent",
+    "https://github.com/saverseats"
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "category": "Event Tickets & Attraction Passes",
+    "priceCurrency": "USD"
+  }
+}
