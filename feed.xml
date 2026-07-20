@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>SaverSeats Live Event Tickets &amp; Schedules</title>
+    <link>https://saverseats.github.io/</link>
+    <description>Latest event ticket updates, tour dates, and support for SaverSeats.</description>
+
+    <!-- Homepage -->
+    <item>
+      <title>SaverSeats Ticket Directory</title>
+      <link>https://saverseats.github.io/</link>
+      <guid>https://saverseats.github.io/</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <!-- Events Page -->
+    <item>
+      <title>Live Events Schedule</title>
+      <link>https://saverseats.github.io/events.html</link>
+      <guid>https://saverseats.github.io/events.html</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <!-- FAQ & Support -->
+    <item>
+      <title>Ticket Support &amp; FAQ</title>
+      <link>https://saverseats.github.io/index.html</link>
+      <guid>https://saverseats.github.io/index.html</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <!-- BTS Concert Tour -->
+    <item>
+      <title>BTS World Tour Passes</title>
+      <link>https://saverseats.github.io/bts/</link>
+      <guid>https://saverseats.github.io/bts/</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+
+    <!-- Bad Bunny Tour -->
+    <item>
+      <title>Bad Bunny Stadium Tour Tickets</title>
+      <link>https://saverseats.github.io/badbunny/</link>
+      <guid>https://saverseats.github.io/badbunny/</guid>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    </item>
+
+  </channel>
+</rss>
