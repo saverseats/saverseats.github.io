@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 
 # Direct links to your main event domain and sitemap
-Sitemap: https://saverseats.com/sitemap.xml
+Sitemap: https://saverseats.com/sitemap.txt
 Host: https://saverseats.com
