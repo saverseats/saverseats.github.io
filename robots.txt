@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://saverseats.github.io/sitemap.xml
+# Direct links to your main event domain and sitemap
+Sitemap: https://saverseats.com/sitemap.xml
+Host: https://saverseats.com
