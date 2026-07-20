@@ -13,9 +13,9 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spain vs Argentina Tickets | 2026 World Cup Final Match 104 Resale</title>
-    <meta name="description" content="Buy Spain vs Argentina tickets for the 2026 World Cup Final (Match 104) at MetLife Stadium. View live ticket price updates, seating availability, and secure seats.">
-    <meta name="keywords" content="Spain vs Argentina tickets, World Cup Final tickets 2026, Match 104 tickets, MetLife Stadium soccer tickets, buy World Cup resale tickets, cheap World Cup final seats">
+    <title>Book tours, attractions and event tickets worldwide | SaverSeats</title>
+    <meta name="description" content="Discover the best things to do in hundreds of destinations. Buy Spain vs Argentina tickets for the 2026 World Cup Final (Match 104) at MetLife Stadium, sports, concerts, and tours.">
+    <meta name="keywords" content="Spain vs Argentina tickets, World Cup Final tickets 2026, Match 104 tickets, MetLife Stadium soccer tickets, buy World Cup resale tickets, cheap World Cup final seats, sports tickets, tour bookings">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,28 +54,27 @@
             padding: 100px 0 40px 0;
         }
 
-        /* Hero Stadium Background with Dark Overlay */
         .background-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(to bottom, rgba(13, 15, 18, 0.75), rgba(13, 15, 18, 0.95)), 
+            background-image: linear-gradient(to bottom, rgba(13, 15, 18, 0.85), rgba(13, 15, 18, 0.98)), 
                               url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             z-index: -1;
         }
 
-        /* Glassmorphic Navbar */
+        /* Navbar */
         .navbar {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 70px;
-            background: rgba(13, 15, 18, 0.65);
+            background: rgba(13, 15, 18, 0.8);
             backdrop-filter: blur(25px);
             -webkit-backdrop-filter: blur(25px);
             border-bottom: 1px solid var(--border-glass);
@@ -87,7 +86,7 @@
 
         .nav-container {
             width: 100%;
-            max-width: 650px;
+            max-width: 1000px;
             padding: 0 20px;
             display: flex;
             justify-content: space-between;
@@ -103,9 +102,7 @@
             letter-spacing: -0.5px;
         }
 
-        .brand span {
-            color: var(--primary);
-        }
+        .brand span { color: var(--primary); }
 
         .nav-tabs {
             display: flex;
@@ -125,20 +122,12 @@
             border-radius: 6px;
         }
 
-        .nav-tab-item:hover, .nav-tab-item.active {
-            color: #fff;
-        }
+        .nav-tab-item:hover, .nav-tab-item.active { color: #fff; }
 
         .nav-tab-item.bts-tab {
             border: 1px solid rgba(187, 134, 252, 0.4);
             color: #bb86fc;
             background: rgba(187, 134, 252, 0.05);
-        }
-
-        .nav-tab-item.bts-tab:hover {
-            background: rgba(187, 134, 252, 0.15);
-            color: #d6b3ff;
-            border-color: rgba(187, 134, 252, 0.7);
         }
 
         .nav-tab-item.badbunny-tab {
@@ -147,30 +136,39 @@
             background: rgba(255, 112, 67, 0.05);
         }
 
-        .nav-tab-item.badbunny-tab:hover {
-            background: rgba(255, 112, 67, 0.15);
-            color: #ff8a65;
-            border-color: rgba(255, 112, 67, 0.7);
-        }
-
         .nav-tab-item.faq-tab {
             border: 1px solid rgba(255, 215, 0, 0.3);
             color: var(--primary);
             background: rgba(255, 215, 0, 0.03);
         }
 
-        .nav-tab-item.faq-tab:hover {
-            background: rgba(255, 215, 0, 0.12);
-            color: #fff;
-            border-color: rgba(255, 215, 0, 0.6);
-        }
-
         /* Container */
         .container {
             width: 100%;
-            max-width: 650px;
+            max-width: 1000px;
             padding: 20px;
             margin: auto;
+        }
+
+        /* Hero Titles */
+        .hero-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-top: 8px;
+            font-weight: 400;
         }
 
         /* Glassmorphism Section/Card Base */
@@ -185,11 +183,8 @@
             padding: 35px 30px;
         }
 
-        .main-card {
-            text-align: center;
-        }
+        .main-card { text-align: center; }
 
-        /* Badges */
         .badge {
             display: inline-block;
             background: linear-gradient(135deg, #ff3366, #ff003c);
@@ -204,7 +199,6 @@
             box-shadow: 0 4px 15px rgba(255, 0, 60, 0.3);
         }
 
-        /* Hero Matchup Title */
         .matchup {
             font-family: 'Montserrat', sans-serif;
             font-size: 2.5rem;
@@ -222,7 +216,6 @@
             font-weight: 400;
         }
 
-        /* Event Details Grid */
         .details-grid {
             margin: 30px 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -239,19 +232,10 @@
             gap: 10px;
         }
 
-        .detail-item strong {
-            color: #fff;
-        }
+        .detail-item strong { color: #fff; }
+        .detail-icon { color: var(--primary); }
 
-        .detail-icon {
-            color: var(--primary);
-        }
-
-        /* Pricing Area */
-        .price-container {
-            margin-bottom: 30px;
-        }
-
+        .price-container { margin-bottom: 30px; }
         .price-label {
             font-size: 0.9rem;
             color: var(--text-muted);
@@ -282,7 +266,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Buttons & CTAs */
         .cta-btn {
             display: block;
             text-decoration: none;
@@ -316,78 +299,129 @@
             gap: 5px;
         }
 
-        /* FAQ Styling */
-        .faq-title {
+        /* Generic Section Heading */
+        .section-title {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.6rem;
             font-weight: 800;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: #ffffff;
             border-bottom: 2px solid var(--primary);
             padding-bottom: 8px;
             display: inline-block;
         }
 
-        .faq-item {
-            margin-bottom: 20px;
+        /* Visual Card Grid (Matches Reference Image) */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
         }
 
-        .faq-item:last-child {
-            margin-bottom: 0;
+        .media-card {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
+        .media-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .media-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .media-card-body {
+            padding: 12px 15px;
+        }
+
+        .media-card-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .media-card-sub {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* Generic Link Grids & Lists */
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .link-item-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-glass);
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: background 0.2s ease;
+        }
+
+        .link-item-card:hover {
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .link-item-title {
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: block;
+        }
+
+        .link-item-desc {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            display: block;
+        }
+
+        /* FAQ Styling */
+        .faq-item { margin-bottom: 20px; }
         .faq-question {
             font-weight: 700;
             font-size: 1.1rem;
             color: var(--primary);
             margin-bottom: 8px;
         }
-
         .faq-answer {
             color: var(--text-muted);
             font-size: 0.95rem;
             line-height: 1.6;
         }
 
-        /* Responsive Breakpoints */
         @media (max-width: 480px) {
-            body {
-                padding-top: 90px;
-            }
-            .navbar {
-                height: auto;
-                padding: 12px 0;
-            }
-            .nav-container {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .nav-tabs {
-                gap: 8px;
-            }
-            .nav-tab-item {
-                font-size: 0.75rem;
-                padding: 4px 8px;
-            }
-            .main-card {
-                padding: 30px 20px;
-            }
-            .matchup {
-                font-size: 1.9rem;
-            }
-            .price-amount {
-                font-size: 2.5rem;
-            }
-            .list-section {
-                padding: 25px 20px;
-            }
-            .faq-title {
-                font-size: 1.3rem;
-            }
+            body { padding-top: 90px; }
+            .navbar { height: auto; padding: 12px 0; }
+            .nav-container { flex-direction: column; gap: 10px; }
+            .nav-tabs { gap: 8px; }
+            .nav-tab-item { font-size: 0.75rem; padding: 4px 8px; }
+            .main-card { padding: 30px 20px; }
+            .matchup { font-size: 1.9rem; }
+            .price-amount { font-size: 2.5rem; }
+            .list-section { padding: 25px 20px; }
+            .hero-title { font-size: 1.6rem; }
+            .media-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
         }
     </style>
 
-    <!-- Enhanced Schema Markup Bundle (JSON-LD) for Local Maps & SGE -->
+    <!-- Schema Markup Bundle (JSON-LD) -->
     <script type="application/ld+json">
     [
       {
@@ -446,10 +480,10 @@
 
     <div class="background-overlay"></div>
 
-    <!-- Navigation Header with Tab Layout -->
+    <!-- Navigation Header -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="brand">SAVER<span>SEATS</span></a>
+            <a href="https://saverseats.com" class="brand">SAVER<span>SEATS</span></a>
             <div class="nav-tabs">
                 <a href="#" class="nav-tab-item active">Football</a>
                 <a href="https://saverseats.github.io/bts" class="nav-tab-item bts-tab">BTS Tour</a>
@@ -461,15 +495,21 @@
 
     <div class="container">
         
-        <!-- MAIN CARD: Spain vs Argentina (Featured Main Spot) -->
+        <!-- HERO HEADINGS -->
+        <header class="hero-header">
+            <h1 class="hero-title">Book tours, attractions and event tickets worldwide</h1>
+            <p class="hero-subtitle">Discover the best things to do in hundreds of destinations</p>
+        </header>
+        
+        <!-- MAIN FEATURED EVENT CARD -->
         <main class="main-card">
             <span class="badge">Match 104 • The World Cup Final</span>
             
-            <h1 class="matchup">
+            <h2 class="matchup">
                 Spain 
                 <span>vs</span> 
                 Argentina
-            </h1>
+            </h2>
 
             <div class="details-grid">
                 <div class="detail-item">
@@ -501,9 +541,249 @@
             </div>
         </main>
 
-        <!-- Visual FAQ Section for AI Search Engine Summaries & Featured Snippets -->
+        <!-- FOOTBALL SECTION (IMAGE CARDS MATCHING REFERENCE) -->
         <section class="list-section">
-            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <h2 class="section-title">Football</h2>
+            <div class="media-grid">
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="Real Madrid CF">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Real Madrid CF Tickets</div>
+                        <div class="media-card-sub">39 games</div>
+                    </div>
+                </a>
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Chelsea FC">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Chelsea FC Tickets</div>
+                        <div class="media-card-sub">39 games</div>
+                    </div>
+                </a>
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Arsenal FC">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Arsenal FC Tickets</div>
+                        <div class="media-card-sub">42 games</div>
+                    </div>
+                </a>
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=600&q=80" alt="Manchester City FC">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Manchester City FC Tickets</div>
+                        <div class="media-card-sub">38 games</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- GAMES SECTION (IMAGE CARDS MATCHING REFERENCE) -->
+        <section class="list-section">
+            <h2 class="section-title">Games</h2>
+            <div class="media-grid">
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=600&q=80" alt="Real Madrid vs Real Sociedad">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Real Madrid CF vs Real Sociedad</div>
+                        <div class="media-card-sub">Wed Aug 26 at 9:00pm</div>
+                    </div>
+                </a>
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="AC Milan vs Inter Milan">
+                    <div class="media-card-body">
+                        <div class="media-card-title">AC Milan vs FC Inter Milan</div>
+                        <div class="media-card-sub">Wed Aug 5 at 6:00pm</div>
+                    </div>
+                </a>
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80" alt="Arsenal vs Chelsea">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Arsenal FC vs Chelsea FC</div>
+                        <div class="media-card-sub">Sun Sep 6 at 4:30pm</div>
+                    </div>
+                </a>
+                <a href="https://saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?auto=format&fit=crop&w=600&q=80" alt="Manchester United vs Manchester City">
+                    <div class="media-card-body">
+                        <div class="media-card-title">Manchester United FC vs Manchester City FC</div>
+                        <div class="media-card-sub">Sun Sep 13 at 4:30pm</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CATEGORIES SECTION (LINKED DIRECTLY TO SUBDOMAINS) -->
+        <section class="list-section">
+            <h2 class="section-title">Categories</h2>
+            <div class="media-grid">
+                <a href="https://nba.saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80" alt="NBA Tickets">
+                    <div class="media-card-body">
+                        <div class="media-card-title">NBA Tickets</div>
+                        <div class="media-card-sub">nba.saverseats.com</div>
+                    </div>
+                </a>
+                <a href="https://nhl.saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1580748141549-71748dbe0bdc?auto=format&fit=crop&w=600&q=80" alt="NHL Tickets">
+                    <div class="media-card-body">
+                        <div class="media-card-title">NHL Tickets</div>
+                        <div class="media-card-sub">nhl.saverseats.com</div>
+                    </div>
+                </a>
+                <a href="https://nfl.saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=600&q=80" alt="NFL Tickets">
+                    <div class="media-card-body">
+                        <div class="media-card-title">NFL Tickets</div>
+                        <div class="media-card-sub">nfl.saverseats.com</div>
+                    </div>
+                </a>
+                <a href="https://mlb.saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1508802913482-f3da9e160017?auto=format&fit=crop&w=600&q=80" alt="MLB Tickets">
+                    <div class="media-card-body">
+                        <div class="media-card-title">MLB Tickets</div>
+                        <div class="media-card-sub">mlb.saverseats.com</div>
+                    </div>
+                </a>
+                <a href="https://mls.saverseats.com" class="media-card">
+                    <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=600&q=80" alt="MLS Tickets">
+                    <div class="media-card-body">
+                        <div class="media-card-title">MLS Tickets</div>
+                        <div class="media-card-sub">mls.saverseats.com</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- TOP DESTINATIONS -->
+        <section class="list-section">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="link-grid">
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">New York</span>
+                    <span class="link-item-desc">321 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Rome</span>
+                    <span class="link-item-desc">328 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">London</span>
+                    <span class="link-item-desc">291 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Paris</span>
+                    <span class="link-item-desc">343 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Los Angeles</span>
+                    <span class="link-item-desc">75 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Miami</span>
+                    <span class="link-item-desc">84 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Madrid</span>
+                    <span class="link-item-desc">205 things to do</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Milan</span>
+                    <span class="link-item-desc">79 things to do</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- TOP TOURS & ACTIVITIES -->
+        <section class="list-section">
+            <h2 class="section-title">Top Tours and Activities</h2>
+            <div class="link-grid">
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">New York Helicopter Flights</span>
+                    <span class="link-item-desc">⭐ 4.7 (18,992 Reviews) • From $259</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Vatican Tickets and Tours</span>
+                    <span class="link-item-desc">⭐ 4.6 (48,010 Reviews) • From $7</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Colosseum & Palatine Hill Guided Tours</span>
+                    <span class="link-item-desc">⭐ 4.7 (16,048 Reviews) • From $45</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Disneyland Paris Tickets</span>
+                    <span class="link-item-desc">⭐ 4.7 (14,111 Reviews) • From $103</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Niagara Falls Day Trips from New York</span>
+                    <span class="link-item-desc">⭐ 4.6 (8,532 Reviews) • From $158</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Harry Potter Studios Tickets in London</span>
+                    <span class="link-item-desc">⭐ 4.6 (18,621 Reviews) • From $40</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- WORLD CUP 2026 -->
+        <section class="list-section">
+            <h2 class="section-title">World Cup 2026</h2>
+            <div class="link-grid">
+                <a href="https://argentinawc26.saverseats.com" class="link-item-card">
+                    <span class="link-item-title">World Cup 2026 Final Tickets</span>
+                    <span class="link-item-desc">Match 104 • MetLife Stadium</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Spain Tickets</span>
+                    <span class="link-item-desc">View fixtures and seat availability</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">France Tickets</span>
+                    <span class="link-item-desc">View fixtures and seat availability</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">England Tickets</span>
+                    <span class="link-item-desc">View fixtures and seat availability</span>
+                </a>
+                <a href="https://argentinawc26.saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Argentina Tickets</span>
+                    <span class="link-item-desc">View fixtures and seat availability</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- MUSIC & CONCERTS -->
+        <section class="list-section">
+            <h2 class="section-title">Music & Concerts</h2>
+            <div class="link-grid">
+                <a href="https://saverseats.github.io/bts" class="link-item-card">
+                    <span class="link-item-title">BTS Tickets</span>
+                    <span class="link-item-desc">57 concerts</span>
+                </a>
+                <a href="https://saverseats.github.io/badbunny" class="link-item-card">
+                    <span class="link-item-title">Bad Bunny Tickets</span>
+                    <span class="link-item-desc">1 concert</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Katseye Tickets</span>
+                    <span class="link-item-desc">32 concerts</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Bruno Mars Tickets</span>
+                    <span class="link-item-desc">38 concerts</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">The Weeknd Tickets</span>
+                    <span class="link-item-desc">35 concerts</span>
+                </a>
+                <a href="https://saverseats.com" class="link-item-card">
+                    <span class="link-item-title">Ed Sheeran Tickets</span>
+                    <span class="link-item-desc">24 concerts</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION FOR AI & FEATURED SNIPPETS -->
+        <section class="list-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
             
             <div class="faq-item">
                 <h3 class="faq-question">How much are tickets for Spain vs Argentina Final Match 104 at MetLife Stadium?</h3>
@@ -515,6 +795,7 @@
                 <p class="faq-answer">Authorized marketplace platforms and independent verification lists offer secondary market listings. To claim guaranteed inventory options as prices fluctuate, review the interactive layout charts on the main portal link.</p>
             </div>
         </section>
+
     </div>
 
 </body>
