@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
-# Direct links to your main event domain and sitemap
+# Sitemap Indexing
+Sitemap: https://saverseats.com/feed.xml
 Sitemap: https://saverseats.com/sitemap.txt
+
+# Preferred Host
 Host: https://saverseats.com
